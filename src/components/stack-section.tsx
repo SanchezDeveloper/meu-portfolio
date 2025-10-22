@@ -25,7 +25,7 @@ const StackSection: React.FC = () => {
   return (
     <section
       id="stack"
-      className="h-screen px-6py-16 flex  text-white"
+      className="h-screen px-6py-16 flex  text-white cursor-default"
     >
       <motion.div
         initial={{ opacity: 0, x: -50 }}
@@ -44,7 +44,7 @@ const StackSection: React.FC = () => {
               value={`item-${index}`}
               className="border border-gray-700 rounded-lg bg-gray-900/40 backdrop-blur-sm"
             >
-              <AccordionTrigger className="text-left text-md font-semibold flex items-center gap-3 px-4">
+              <AccordionTrigger className="text-left text-md font-semibold flex items-center gap-3 px-4 cursor-pointer">
                 <span className="text-2xl">{item.icon}</span>
                 {item.title}
               </AccordionTrigger>

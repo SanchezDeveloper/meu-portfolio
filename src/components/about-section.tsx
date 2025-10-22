@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import ElectricBorder from './ui/ElectricBorder'
+import DownloadBtnCv from "./down-pdf-button";
 
 interface AboutData {
   name: string;
@@ -28,30 +28,26 @@ export default function AboutSection() {
   return (
     <section id="about-me" className="text-white min-h-screen max-w-10/12 flex items-center text-center justify-center py-20 px-4 mx-auto md:text-start">
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10 cursor-default">
-        
-        <ElectricBorder
-          color="#8a34d1"
-          speed={1}
-          chaos={0.5}
-          thickness={2}
-          style={{ borderRadius: 16 }}
-          className={""}
-        >
-          <Image
-            src="/assets/images/profile-photo.png"
-            alt={`Foto de ${data.name}`}
-            width={250}
-            height={250}
-          ></Image>
-        </ElectricBorder>
+        <Image
+          src="/assets/images/profile-photo.png"
+          alt={`Foto de ${data.name}`}
+          width={250}
+          height={250}
+          className="rounded-lg border-2 border-purple-800 shadow-[0_0_10px_rgba(139,92,246,0.7)] "
+        ></Image>
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           whileInView={window.innerWidth > 640 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.6 }} 
           className="flex-1"
         >
-          <h2 className="text-3xl font-bold">{data.name}</h2>
-          <h3 className="text-xl text-purple-800">{data.title}</h3>
+          <div className="flex flex-col md:flex-row gap-5 items-center">
+            <div>
+              <h2 className="text-3xl font-bold">{data.name}</h2>
+              <h3 className="text-xl text-purple-800">{data.title}</h3>
+            </div>
+            <DownloadBtnCv />
+          </div>
           <p className="mt-2 italic text-purple-600"></p>
           <p className="mt-4">{data.description}</p>
           <p className="mt-6 text-white">{data.goals}</p>

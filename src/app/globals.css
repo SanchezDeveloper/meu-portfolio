@@ -15,11 +15,27 @@ body {
 }
 
 .scrollbar-none::-webkit-scrollbar {
-  display: none; /* Chrome, Safari e Edge */
+  display: none;
 }
 .scrollbar-none {
-  -ms-overflow-style: none; /* IE e Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+.animated-gradient-text {
+  background: linear-gradient(90deg, #5B21B6, #6D28D9, #7C3AED, #8B5CF6, #9333EA);
+  background-size: 300% 300%;
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  background-clip: text; 
+  color: transparent; 
+  animation: gradientShift 5s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 @theme inline {

@@ -1,7 +1,6 @@
 
 import React, { useEffect, useState } from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import GradientText from './ui/GradientText';
 import { motion } from "framer-motion";
 
 export default function FirstSection() {
@@ -30,14 +29,9 @@ export default function FirstSection() {
       <div className="mb-6">
         <h1 className="text-3xl md:text-5xl font-bold mb-4 drop-shadow-lg flex flex-col min-[379px]:flex-row">
           Olá, eu sou <code>&nbsp;</code>
-          <GradientText
-            colors={["#5B21B6","#6D28D9","#7C3AED","#8B5CF6","#9333EA"]}
-            animationSpeed={isMobile ? 0 : 3} // animação desativada no mobile
-            showBorder={false}
-            className="text-3xl md:text-5xl"
-          >
+          <span className="animated-gradient-text">
             Vinícius Caio
-          </GradientText>
+          </span>
         </h1>
         <span className="text-2xl md:text-3xl drop-shadow-md">
           {typedText}
@@ -46,7 +40,7 @@ export default function FirstSection() {
       </div>
       <a
         href="#about-me"
-        className="p-3 bg-purple-700 hover:bg-purple-600 text-white font-semibold rounded-md transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/30"
+        className="inline-block bg-purple-700 hover:bg-purple-600 text-white font-semibold py-3 px-8 rounded-md transition-all duration-300 transform hover:scale-105 shadow-lg shadow-purple-500/30 hover:shadow-black/30"
       >
         Saiba mais...
       </a>
