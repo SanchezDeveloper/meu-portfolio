@@ -29,7 +29,7 @@ const StackSection: React.FC = () => {
     >
       <motion.div
         initial={{ opacity: 0, x: -50 }}
-        whileInView={window.innerWidth > 640 ? { opacity: 1, x: 0 } : {}}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
         className="max-w-11/12 w-full h-full overflow-y-auto scrollbar-none mx-auto pt-32"
       >

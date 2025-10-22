@@ -26,7 +26,7 @@ export default function PortfolioShowcase() {
     <section id="projects" className="py-24 text-white relative overflow-hidden">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
-        whileInView={window.innerWidth > 640 ? { opacity: 1, y: 0 } : {}}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }} 
         className="container mx-auto px-6">
         <h2 className="text-3xl md:text-3xl font-bold text-center mb-16">
