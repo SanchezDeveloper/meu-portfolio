@@ -37,13 +37,12 @@ export default function AboutSection() {
           style={{ borderRadius: 16 }}
           className={""}
         >
-          <img
+          <Image
             src="/assets/images/profile-photo.png"
             alt={`Foto de ${data.name}`}
             width={250}
             height={250}
-          >
-          </img>
+          ></Image>
         </ElectricBorder>
         <motion.div
           initial={{ opacity: 0, x: 50 }}
