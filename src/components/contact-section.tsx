@@ -44,7 +44,7 @@ export default function ContactSection() {
     >
       <motion.div 
         initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        whileInView={window.innerWidth > 640 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
         className=" mx-auto text-center"
       >

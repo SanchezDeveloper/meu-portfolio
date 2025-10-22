@@ -47,7 +47,7 @@ export default function AboutSection() {
         </ElectricBorder>
         <motion.div
           initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          whileInView={window.innerWidth > 640 ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.6 }} 
           className="flex-1"
         >

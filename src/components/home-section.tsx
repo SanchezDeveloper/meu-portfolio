@@ -18,9 +18,10 @@ export default function FirstSection() {
     >
       <motion.div
         initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }} 
-       className="ml-0 md:ml-10 md:text-left z-10">
+        whileInView={window.innerWidth > 640 ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.6 }}
+        className="ml-0 md:ml-10 md:text-left z-10"
+      >
         <div className="mb-6">
           <h1 className="text-3xl md:text-5xl font-bold mb-4 drop-shadow-lg flex flex-col min-[379px]:flex-row">
             Olá, eu sou <code>&nbsp;</code>

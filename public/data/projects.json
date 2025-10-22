@@ -18,18 +18,6 @@
       "link": "https://teste-consulta-coop.vercel.app/"
     },
     {
-      "image": "/assets/images/proje-pgs-consultoria.png",
-      "title": "PGS Consultoria - (Site Institucional)",
-      "description": "Site institucional criado para empresa especialista em consultoria e segurança do trabalho.",
-      "link": "https://pgsconsultoriasst.com.br"
-    },
-    {
-      "image": "/assets/images/proje-gerador.png",
-      "title": "Gerador de Senhas",
-      "description": "projeto criado para geração de senhas fortes.",
-      "link": "https://sanchezdeveloper.github.io/sua-senha.github.io/"
-    },
-    {
         "image": "/assets/images/proje-almeida.png",
         "title": "Almeida Tattoo - (Site Institucional)",
         "description": "Site institucional criado para estúdio de tatuagem.",
@@ -40,6 +28,18 @@
         "title": "Loja Zap - (E-commerce estático)",
         "description": "E-commerce estático criado para vendas low ticket de projetos e-commerce.",
         "link": "https://mvp-loja-zap.vercel.app/"
+    },
+    {
+      "image": "/assets/images/proje-pgs-consultoria.png",
+      "title": "PGS Consultoria - (Site Institucional)",
+      "description": "Site institucional criado para empresa especialista em consultoria e segurança do trabalho.",
+      "link": "https://pgsconsultoriasst.com.br"
+    },
+    {
+      "image": "/assets/images/proje-gerador.png",
+      "title": "Gerador de Senhas",
+      "description": "Projeto criado para geração de senhas fortes.",
+      "link": "https://sanchezdeveloper.github.io/sua-senha.github.io/"
     },
     {
         "image": "/assets/images/more-proje.png",
