@@ -16,9 +16,7 @@ export default function FirstSection() {
 
   // Typewriter ajustado para mobile
   const [typedText] = useTypewriter({
-    words: isMobile
-      ? ["Desenvolvedor Web"] // só a primeira palavra no mobile
-      : ["Desenvolvedor Web", "Solucionador de problemas", "Fascinado por tecnologia"],
+    words: ["Desenvolvedor Web", "Solucionador de problemas", "Fascinado por tecnologia"],
     loop: true,
     delaySpeed: 2000,
   });
