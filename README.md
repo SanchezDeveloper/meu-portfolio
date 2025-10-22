@@ -32,5 +32,3 @@ Este portfólio foi desenvolvido com:
 
 ---
 
-## Estrutura do Projeto
-
