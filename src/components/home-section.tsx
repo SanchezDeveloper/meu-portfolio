@@ -6,14 +6,16 @@ import { motion } from 'framer-motion';
 
 export default function FirstSection() {
   const [text] = useTypewriter({
-    words: ["Desenvolvedor Web", "Solucionador de problemas", "Fascinado por tecnologia"],
+    words: window.innerWidth > 640
+      ? ["Desenvolvedor Web", "Solucionador de problemas", "Fascinado por tecnologia"]
+      : ["Desenvolvedor Web"],
     loop: true,
     delaySpeed: 2000,
   });
 
   return (
     <section
-      className="relative h-[calc(100dvh+64px)] flex items-center justify-center text-center text-white px-4 overflow-hidden"
+      className="relative min-h-screen flex items-center justify-center text-center text-white px-4 overflow-hidden"
       id="home"
     >
       <motion.div
@@ -27,7 +29,7 @@ export default function FirstSection() {
             Olá, eu sou <code>&nbsp;</code>
             <GradientText
               colors={["#5B21B6, #6D28D9, #7C3AED, #8B5CF6, #9333EA"]}
-              animationSpeed={3}
+              animationSpeed={window.innerWidth > 640 ? 3 : 0}
               showBorder={false}
               className="custom-class text-3xl md:text-5xl"
             >

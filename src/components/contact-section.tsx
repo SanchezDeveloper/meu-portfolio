@@ -40,7 +40,7 @@ export default function ContactSection() {
   return (
     <section
       id="contacts"
-      className="relative flex flex-col justify-center items-center mx-auto py-24 px-6 text-white overflow-hidden min-h-[calc(100dvh-64px)] max-w-[90dvw] "
+      className="relative flex flex-col justify-center items-center mx-auto py-24 px-6 text-white overflow-hidden min-h-screen max-w-[90dvw] "
     >
       <motion.div 
         initial={{ opacity: 0, y: 50 }}
