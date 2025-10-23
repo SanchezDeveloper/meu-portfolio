@@ -5,7 +5,7 @@ Bem-vindo ao meu portfólio online! 🌟
 
 Aqui você encontra meus projetos de desenvolvimento web, conhecimentos em frontend e backend, além de demonstrações de soluções criativas que construí.  
 
-**Acesse o site:** [www.sanchezdev.com.br](https://www.sanchezdev.com.br) 🚀  
+**Acesse o site:** [clique e acesse](meu-portfolio-mu-taupe.vercel.app) 🚀  
 
 ---
 
