@@ -23,7 +23,7 @@ export default function PortfolioShowcase() {
   }, []);
 
   return (
-    <section id="projects" className="py-24 text-white relative overflow-hidden">
+    <section id="projects" className="py-24 px-4 text-white relative overflow-hidden">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
