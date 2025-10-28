@@ -2,7 +2,7 @@ import "./globals.css";
 import type { Metadata } from "next";
 import { Inter, Work_Sans } from "next/font/google";
 import ClientLayout from "@/components/client-section";
-
+import AnimatedBackgroud from "@/components/ui/animated-background";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -29,6 +29,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${workSans.variable} antialiased`}
       >
+        <AnimatedBackgroud />
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>

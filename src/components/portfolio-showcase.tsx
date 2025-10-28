@@ -28,7 +28,7 @@ export default function PortfolioShowcase() {
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }} 
-        className="container mx-auto px-6">
+        className="container mx-auto px-6 sm:px-0">
         <h2 className="text-3xl md:text-3xl font-bold text-center mb-16">
           Meus Projetos
         </h2>
@@ -38,7 +38,7 @@ export default function PortfolioShowcase() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="relative group rounded-2xl overflow-hidden shadow-lg bg-gray-900 hover:scale-[1.02] transition-transform duration-300"
+              className="relative group rounded-2xl overflow-hidden glassmorphism  hover:scale-[1.02] transition-transform duration-300"
             >
               {/* Imagem do projeto */}
               <div className="relative overflow-hidden rounded-t-2xl">

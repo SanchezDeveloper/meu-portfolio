@@ -22,6 +22,8 @@ body {
   scrollbar-width: none; 
 }
 
+/*Texto Gradiente animado leve */
+
 .animated-gradient-text {
   background: linear-gradient(90deg, #5B21B6, #6D28D9, #7C3AED, #8B5CF6, #9333EA);
   background-size: 300% 300%;
@@ -36,6 +38,41 @@ body {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+/*Fundo Gradiente animado leve */
+.animated-gradient {
+  background: linear-gradient(
+    270deg,
+    #1a1a2e,
+    #2a1b3d,
+    #3b0764,
+    #1e1b4b 
+  );
+  background-size: 600% 600%;
+  animation: gradientMove 20s ease infinite;
+  will-change: background-position;
+}
+
+.glassmorphism { 
+  background: rgba( 255, 255, 255, 0.1 ); 
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); 
+  backdrop-filter: blur( 4px ); 
+  -webkit-backdrop-filter: blur( 4px ); 
+  border-radius: 10px; 
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @theme inline {
@@ -144,6 +181,8 @@ body {
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.551 0.027 264.364);
 }
+
+
 
 @layer base {
   * {

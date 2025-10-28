@@ -26,8 +26,8 @@ export default function AboutSection() {
   if(!data) return <p>Em manutenção...</p>
 
   return (
-    <section id="about-me" className="text-white min-h-screen max-w-10/12 flex items-center text-center justify-center py-20 px-4 mx-auto md:text-start">
-      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10 cursor-default">
+    <section id="about-me" className="text-white min-h-screen flex items-center text-center justify-center py-20 mx-auto md:text-start ">
+      <div className="mx-auto flex flex-col md:flex-row items-center gap-10 cursor-default">
         <Image
           src="/assets/images/profile-photo.png"
           alt={`Foto de ${data.name}`}

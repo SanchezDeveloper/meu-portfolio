@@ -25,7 +25,7 @@ const StackSection: React.FC = () => {
   return (
     <section
       id="stack"
-      className="h-screen px-6py-16 flex  text-white cursor-default"
+      className="h-screen px-6py-16 flex  text-white cursor-default min-w-1/2 sm:min-w-10/12"
     >
       <motion.div
         initial={{ opacity: 0, x: -50 }}
